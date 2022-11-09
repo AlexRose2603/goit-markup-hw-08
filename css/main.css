@@ -352,9 +352,19 @@ input .visually-hidden {
   padding-left: 40px;
   padding-bottom: 48px;
 }
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
 
 .mob-nav {
-  margin-bottom: 302px;
+  margin-bottom: 300px;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .mob-nav {
+    margin-bottom: 260px;
+  }
 }
 
 .mob-item-nav {
@@ -575,7 +585,7 @@ ul {
   display: flex;
   align-items: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-list a {
     font-size: 12px;
     line-height: 1.16;
@@ -858,13 +868,10 @@ ul {
   background-color: #F5F4FA;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .workers__list {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 768px) {
@@ -876,10 +883,13 @@ ul {
     gap: 30px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 767px) {
   .workers__list {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
   }
 }
 
@@ -1022,6 +1032,11 @@ ul {
   padding: 60px 0;
 }
 
+@media screen and (min-width: 320px) {
+  .footer-tablet {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-tablet {
     display: flex;
@@ -1098,11 +1113,6 @@ ul {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .footer-join {
-    margin-bottom: 60px;
-  }
-}
 .join {
   font-size: 14px;
   line-height: 1.14;
@@ -1240,11 +1250,18 @@ input::placeholder {
 }
 
 .filter-button-list {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   margin-bottom: 50px;
   justify-content: center;
   gap: 8px;
+}
+@media screen and (max-width: 767px) {
+  .filter-button-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }
 
 .button-portfolio {

@@ -28,11 +28,16 @@
     height: 100vh;
     position: fixed;
     padding-left: 40px;
-    padding-bottom: 48px;  
-}
-   
+    padding-bottom: 48px; 
+    @media screen and (min-width: 768px) {
+        display: none;
+   }
+}  
 .mob-nav {
-    margin-bottom: 302px;
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+        margin-bottom: 260px;
+    }
+    margin-bottom: 300px;
 }
 .mob-item-nav {
     font-weight: 500;

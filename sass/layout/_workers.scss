@@ -3,13 +3,11 @@
   }
   
   .workers__list {
-    @media screen and (min-width: 320px) and (max-width: 767px) {
+  
+    @media screen and (min-width: 1200px) {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 30px;
-    }
+      justify-content: space-between;
+     } 
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
@@ -17,10 +15,13 @@
       align-items: center;
       gap: 30px;
     }
-    @media screen and (min-width: 1200px) {
-     display: flex;
-     justify-content: space-between;
-    } 
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
   }
   .workers__item {
     @media screen and (min-width: 320px) {
