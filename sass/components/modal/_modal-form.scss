@@ -91,7 +91,8 @@
   }
   .checkbox-agree {
     margin-bottom: 30px;
-    @media screen and (min-width: 320px) {
+    line-height: 1.71;
+    @media screen and (max-width: 1199px) {
       font-size: 12px;
       line-height: 1.16;
     }
